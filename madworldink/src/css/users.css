@@ -1,0 +1,118 @@
+/* Users Page Styles */
+.users-container {
+    padding: 90px;
+}
+
+.users-container h2 {
+    color: hsl(0, 0%, 17%);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9px;
+}
+
+.users-heading {
+    color: hsl(171, 86%, 25%);
+    margin-top:90px;
+}
+
+/* Users Table Styles */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.users-table th, .users-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color:hsl(0, 0%, 17%);
+}
+
+.users-table th {
+    background-color: hsl(171, 86%, 25%);
+    color: whitesmoke;
+}
+
+.users-table td button.delete-button {
+    background: hsl(0, 0%, 90%); /* Red background to signify delete action */
+    border: 1px solid #ddd;; /* Remove border for a cleaner look */
+    padding: 8px 12px; /* Slightly larger padding for a better click area */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    color: hsl(171, 86%, 25%);; /* White text color for contrast */
+    cursor: pointer;
+    font-weight: bold; /* Make the text bold */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.users-table td button.delete-button:hover {
+    background: hsla(0, 86%, 25%, 0.734);; /* Darker red on hover to indicate interaction */
+    color: whitesmoke;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.users-table td button.delete-button:active {
+    background: #9b2c2c; /* Even darker red on active (click) state */
+    transform: scale(1); /* Reset the scale when button is pressed */
+}
+
+.users-table td button.delete-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(246, 101, 101, 0.5); /* Add a subtle focus shadow */
+}
+/* 
+
+
+/* Footer Styles */
+.users-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.users-footer #rowsSelected {
+    color: hsl(171, 86%, 25%);
+}
+
+.users-footer .delete-all-button {
+    background: hsl(0, 0%, 90%);
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: hsl(171, 86%, 25%);
+    transition: background 0.3s, color 0.3s;
+}
+
+.users-footer .delete-all-button:hover {
+    background: hsla(0, 86%, 25%, 0.734);
+    color: whitesmoke;
+}
+
+/* Pagination Styles */
+.users-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.users-pagination select, .users-pagination button {
+    padding: 5px;
+    border: 1px solid #ddd;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.users-pagination button:hover {
+    background: hsl(0, 0%, 90%);
+}
+

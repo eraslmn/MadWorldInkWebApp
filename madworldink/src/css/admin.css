@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: whitesmoke;
+    color: hsl(171, 86%, 25%);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-top: 220px; /* Adjust this value as needed */
+}
+
+.intro-grid {
+    text-align: center;
+    margin-bottom: 40px;
+    color: hsl(0, 0%, 17%);
+}
+
+.intro-grid h2 {
+    margin-bottom: 10px; /* Add spacing below the heading */
+}
+
+.intro-grid p {
+    margin-top: 10px; /* Optional: Add some spacing above the paragraph */
+    font-size: 16px;  /* Adjust font size if needed */
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dashboard-card, .earnings-card {
+    background: hsl(171, 86%, 25%);
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.dashboard-card:hover, .earnings-card:hover {
+    background-color: hsl(171, 86%, 20%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.copyright {
+    color: hsl(0, 0%, 17%);
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px 0;
+    background: whitesmoke;
+    border-top: 1px solid #ccc;
+}

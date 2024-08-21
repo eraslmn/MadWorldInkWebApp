@@ -1,0 +1,256 @@
+/* Products Page Styles */
+.products-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 80px); /* Adjust height to account for header */
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.products-heading {
+    color: hsl(171, 86%, 25%);
+}
+
+.products-search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.products-search-bar input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.products-search-bar button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-left: none;
+    background: hsl(171, 86%, 25%);
+    color: whitesmoke;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.products-search-bar button:hover {
+    background: hsl(171, 86%, 20%);
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 50px; /* Adjust this margin to move the product cards down */
+}
+
+.no-products {
+    padding: 20px;
+    border-radius: 15px;
+    background: hsl(171, 86%, 25%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    width: 600px;
+    height: 120px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.5;
+    transition: transform 0.2s ease-in-out;
+}
+
+.no-products:hover {
+    transform: scale(1.03);
+}
+.product-card {
+    position: relative;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px; /* Add a margin at the top of each card */
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card .product-name {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.product-card .product-description {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.product-card .product-details {
+    font-size: 12px;
+    margin: 5px 0;
+    color: #666;
+    text-align: center;
+}
+
+.product-card .product-price {
+    font-size: 16px;
+    color: hsl(171, 86%, 25%);
+    margin: 10px 0;
+}
+
+.product-card .product-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product-card .product-actions .edit-button,
+.product-card .product-actions .delete-button {
+    background: hsl(171, 86%, 25%);
+    border: none;
+    cursor: pointer;
+    color: whitesmoke;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 48%;
+}
+
+.product-card .product-actions .edit-button:hover,
+.product-card .product-actions .delete-button:hover {
+    background: hsl(171, 86%, 20%);
+}
+
+.add-product-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: hsl(171, 86%, 25%);
+    color: whitesmoke;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.add-product-button:hover {
+    background: hsl(171, 86%, 20%);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+    color: #000;
+}
+
+.modal-content .form-group {
+    margin-bottom: 15px;
+}
+
+.modal-content .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-content .form-group input,
+.modal-content .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    background: hsl(252, 70%, 60%);
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.modal-content button:hover {
+    background: hsl(252, 70%, 50%);
+}
+
+.confirm-delete {
+    background: hsl(0, 70%, 50%);
+    color: whitesmoke;
+}
+
+.confirm-delete:hover {
+    background: hsl(0, 70%, 40%);
+}
+
+.cancel-delete {
+    background: hsl(252, 70%, 60%);
+    color: whitesmoke;
+}
+
+.cancel-delete:hover {
+    background: hsl(252, 70%, 50%);
+}

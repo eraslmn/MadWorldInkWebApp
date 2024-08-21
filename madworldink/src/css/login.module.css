@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+
+:global(*) {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:global(body) {
+    margin: 0;
+    background: whitesmoke;
+    color: hsl(171, 86%, 25%);
+    overflow: x hidden;
+}
+
+:global(a) {
+    text-decoration: none;
+}
+
+.mwi-login,
+.mwi-signup {
+    position: absolute;
+    width: 175px;
+    height: fit-content;
+    background: hsl(0, 0%, 17%);
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 17%), -1px -1px 5px hsl(0, 0%, 17%);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s ease;
+    z-index: 1;
+    top: -4rem;
+}
+
+.mwi-login h1,
+.mwi-signup h1 {
+    margin: 0;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.mwi-copyright {
+    color: hsl(0, 0%, 17%);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+.mwi-log-reg {
+    display: flex;
+    align-items: center;
+    max-width: 425px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mwi-log-reg__swiper {
+    width: max-content;
+    display: flex;
+}
+
+.mwi-log-reg__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 575px;
+    width: 425px;
+    background: whitesmoke;
+    border-radius: 0.75rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mwi-square {
+    position: absolute;
+    width: 64px;
+    height: 100%;
+    left: 0;
+    background: hsl(0, 0%, 17%);
+    border-radius: 0.75rem;
+    transform: skewY(45deg);
+}
+
+.mwi-square-r {
+    position: absolute;
+    width: 64px;
+    height: 100%;
+    right: 0;
+    background: hsl(0, 0%, 17%);
+    border-radius: 0.75rem;
+    transform: skewY(-45deg);
+}
+
+.mwi-user {
+    display: flex;
+    width: 128px;
+    height: 128px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    background-color: hsl(0, 0%, 17%);
+    color: whitesmoke;
+}
+
+.mwi-user i {
+    font-size: 64px;
+}
+
+.mwi-user-r {
+    display: flex;
+    width: 128px;
+    height: 128px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-color: hsl(0, 0%, 17%);
+    color: whitesmoke;
+}
+
+.mwi-user-r i {
+    font-size: 64px;
+}
+
+.mwi-logo {
+    width: 175px;
+    padding: 25px;
+}
+
+.mwi-input__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mwi-input,
+.mwi-button {
+    width: 225px;
+    border: none;
+    background-color: hsl(171, 86%, 25%);
+    border-radius: 0 0.75rem 0.75rem 0;
+    padding: 10px;
+    margin: 5px 0;
+    color: whitesmoke;
+}
+
+.mwi-input::placeholder {
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.mwi-input:focus {
+    outline: none;
+    background-color: hsl(0, 0%, 17%);
+}
+
+.mwi-button {
+    background: linear-gradient(to left, hsl(171, 86%, 25%), hsl(0, 0%, 17%));
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.mwi-button:hover {
+    background: none;
+    color: hsl(0, 0%, 17%);
+}
+
+.mwi-icon {
+    padding: 10px;
+    margin: 0;
+    font-size: 22px;
+    color: whitesmoke;
+    background: hsl(0, 0%, 17%);
+    border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.mwi-log-reg__h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 17%);
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mwi-log-reg__p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 17%);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.mwi-log-reg__p:hover {
+    color: hsl(171, 86%, 25%);
+}
+
+.mwi-log-reg__p:hover .mwi-sgnup-instead {
+    transform: translate(0.25rem);
+}
+
+.mwi-log-reg__p:hover .mwi-lgn-instead {
+    transform: translate(-0.25rem);
+}
+
+@media screen and (max-width: 1170px) {
+    .mwi-wallpaper-blurred {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        box-shadow: 1px 1px 5px hsl(0, 0%, 17%), -1px -1px 5px hsl(0, 0%, 17%);
+    }
+
+    .mwi-wallpaper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .mwi-wallpaper-blurred {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 695px) {
+    .mwi-login,
+    .mwi-signup {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 630px) {
+    .mwi-log-reg__content {
+        height: 500px;
+    }
+
+    .mwi-square,
+    .mwi-square-r,
+    .mwi-user,
+    .mwi-user-r {
+        display: none;
+    }
+
+    .mwi-logo {
+        width: 125px;
+        padding: 10px;
+    }
+
+    .mwi-input {
+        width: 200px;
+        padding: 5px;
+    }
+
+    .mwi-button {
+        padding: 5px;
+    }
+
+    .mwi-icon {
+        padding: 7px;
+        font-size: 18px;
+    }
+
+    .mwi-log-reg__h {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-height: 495px) {
+    .mwi-log-reg__content {
+        height: 420px;
+    }
+
+    .mwi-copyright {
+        display: none;
+    }
+}

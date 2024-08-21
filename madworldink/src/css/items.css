@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url("../img/Latest_wallpaper1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.wallpaper__container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 475px;
+    height: 475px;
+    z-index: -1;
+}
+
+    .wallpaper__container img {
+        z-index: 1;
+        position: absolute;
+        right: .75rem;
+        top: .75rem;
+        width: 150px;
+    }
+
+.square {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(43, 43, 43, .5), rgba(0, 0, 0, 0)), url(../img/Items.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.wallpaper {
+    position: absolute;
+    right: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75%;
+    height: 75%;
+    background: linear-gradient(90deg, rgba(43, 43, 43, .5), rgba(0, 0, 0, 0)), url(../img/Items.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 17%), -1px -1px 5px hsl(0, 0%, 17%);
+}
+
+table {
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+tr {
+    text-align: center;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 5px 10px;
+}
+
+tr:nth-child(even) {
+    background: hsl(0, 0%, 17%);
+}
+
+.default {
+    width: 100%;
+    margin: .5rem 0;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 14px;
+}
+
+.btn {
+    border: 0;
+    border-radius: 0.5rem;
+    width: 8rem;
+    height: 2.5rem;
+    color: whitesmoke;
+    background-color: hsl(171, 86%, 25%);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    .btn:hover {
+        background: #00FF00;
+        transform: translateY(-.2rem);
+    }
+
+@media screen and (max-width: 1090px) {
+    #content {
+        justify-content: center;
+    }
+
+    .wallpaper__container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .name {
+        font-size: 12px;
+    }
+}
